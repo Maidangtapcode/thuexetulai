@@ -1,0 +1,83 @@
+name: PKMOTO
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  go_router: ^16.1.0
+
+  flutter_svg: ^2.0.9
+
+  cupertino_icons: ^1.0.8
+  fl_chart: ^1.1.1
+  pocketbase: ^0.23.0
+  http: ^1.2.1
+  shared_preferences: ^2.5.3
+  flutter_dotenv: ^5.2.1
+  image_picker: ^1.1.2
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  provider: ^6.1.5
+
+  intl: ^0.20.2
+  qr_flutter: ^4.1.0
+  flutter_local_notifications: ^19.5.0
+  lottie: ^3.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash: ^2.4.0
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/images/cars/
+    - assets/images/banners/
+    - assets/images/users/
+    - assets/images/icons/
+    - .env
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+          style: italic
+          weight: 700
+
+    - family: Anton
+      fonts:
+        - asset: assets/fonts/Anton-Regular.ttf
+
+# Cấu hình cho flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icons/logo.png" # <-- THAY ĐỔI ĐƯỜNG DẪN NÀY
+  min_sdk_android: 21 # optional
+
+flutter_native_splash:
+  # Cấu hình cho màn hình khởi động (Splash Screen)
+  # Màu nền của màn hình khởi động.
+  # Nên dùng màu nền của logo để tạo hiệu ứng liền mạch.
+  color: "#000000"
+
+  # Logo của bạn
+  image: assets/images/icons/logo.png
+
+  # Cấu hình riêng cho Android 12+
+  android_12:
+    image: assets/images/icons/logo.png
+    color: "#000000"
